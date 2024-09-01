@@ -1,0 +1,225 @@
+# File saved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS-threadsafe
+# 
+# non-default properties - (restore without -noprops)
+property attrcolor #000000
+property attrfontsize 8
+property autobundle 1
+property backgroundcolor #ffffff
+property boxcolor0 #000000
+property boxcolor1 #000000
+property boxcolor2 #000000
+property boxinstcolor #000000
+property boxpincolor #000000
+property buscolor #008000
+property closeenough 5
+property createnetattrdsp 2048
+property decorate 1
+property elidetext 40
+property fillcolor1 #ffffcc
+property fillcolor2 #dfebf8
+property fillcolor3 #f0f0f0
+property gatecellname 2
+property instattrmax 30
+property instdrag 15
+property instorder 1
+property marksize 12
+property maxfontsize 15
+property maxzoom 6.25
+property netcolor #19b400
+property objecthighlight0 #ff00ff
+property objecthighlight1 #ffff00
+property objecthighlight2 #00ff00
+property objecthighlight3 #ff6666
+property objecthighlight4 #0000ff
+property objecthighlight5 #ffc800
+property objecthighlight7 #00ffff
+property objecthighlight8 #ff00ff
+property objecthighlight9 #ccccff
+property objecthighlight10 #0ead00
+property objecthighlight11 #cefc00
+property objecthighlight12 #9e2dbe
+property objecthighlight13 #ba6a29
+property objecthighlight14 #fc0188
+property objecthighlight15 #02f990
+property objecthighlight16 #f1b0fb
+property objecthighlight17 #fec004
+property objecthighlight18 #149bff
+property objecthighlight19 #eb591b
+property overlapcolor #19b400
+property pbuscolor #000000
+property pbusnamecolor #000000
+property pinattrmax 20
+property pinorder 2
+property pinpermute 0
+property portcolor #000000
+property portnamecolor #000000
+property ripindexfontsize 8
+property rippercolor #000000
+property rubberbandcolor #000000
+property rubberbandfontsize 15
+property selectattr 0
+property selectionappearance 2
+property selectioncolor #0000ff
+property sheetheight 44
+property sheetwidth 68
+property showmarks 1
+property shownetname 0
+property showpagenumbers 1
+property showripindex 4
+property timelimit 1
+#
+module new calci work:calci:NOFILE -nosplit
+load symbol addsub work:addsub:NOFILE HIERBOX pin K input.left pinBus A1 input.left [3:0] pinBus A2 input.left [3:0] pinBus C output.right [3:0] pinBus S output.right [3:0] boxcolor 1 fillcolor 2 minwidth 13%
+load symbol addsub work:abstract:NOFILE HIERBOX pin K input.left pinBus A1 input.left [3:0] pinBus A2 input.left [3:0] pinBus C output.right [3:0] pinBus S output.right [3:0] boxcolor 1 fillcolor 2 minwidth 13%
+load symbol divider work:divider:NOFILE HIERBOX pinBus A input.left [3:0] pinBus B input.left [3:0] pinBus Q output.right [3:0] pinBus R output.right [3:0] boxcolor 1 fillcolor 2 minwidth 13%
+load symbol demux_shift_vector work:demux_shift_vector:NOFILE HIERBOX pinBus input input.left [3:0] pinBus output0 output.right [3:0] pinBus output1 output.right [3:0] pinBus output2 output.right [3:0] pinBus output3 output.right [3:0] pinBus sel input.left [1:0] boxcolor 1 fillcolor 2 minwidth 13%
+load symbol demux_shift_vector work:abstract:NOFILE HIERBOX pinBus input input.left [3:0] pinBus output0 output.right [3:0] pinBus output1 output.right [3:0] pinBus output2 output.right [3:0] pinBus output3 output.right [3:0] pinBus sel input.left [1:0] boxcolor 1 fillcolor 2 minwidth 13%
+load symbol Multiplier_VHDL work:Multiplier_VHDL:NOFILE HIERBOX pinBus Nibble1 input.left [3:0] pinBus Nibble2 input.left [3:0] pinBus Result1 output.right [3:0] pinBus Result2 output.right [3:0] boxcolor 1 fillcolor 2 minwidth 13%
+load symbol mux_shift_vector work:mux_shift_vector:NOFILE HIERBOX pinBus input0 input.left [3:0] pinBus input1 input.left [3:0] pinBus input2 input.left [3:0] pinBus input3 input.left [3:0] pinBus output output.right [3:0] pinBus sel input.left [1:0] boxcolor 1 fillcolor 2 minwidth 13%
+load symbol mux_shift_vector work:abstract:NOFILE HIERBOX pinBus input0 input.left [3:0] pinBus input1 input.left [3:0] pinBus input2 input.left [3:0] pinBus input3 input.left [3:0] pinBus output output.right [3:0] pinBus sel input.left [1:0] boxcolor 1 fillcolor 2 minwidth 13%
+load portBus choicevec input [1:0] -attr @name choicevec[1:0] -pg 1 -lvl 0 -x 0 -y 250
+load portBus input1 input [3:0] -attr @name input1[3:0] -pg 1 -lvl 0 -x 0 -y 220
+load portBus input2 input [3:0] -attr @name input2[3:0] -pg 1 -lvl 0 -x 0 -y 380
+load portBus output1 output [3:0] -attr @name output1[3:0] -pg 1 -lvl 4 -x 1000 -y 210
+load portBus output2 output [3:0] -attr @name output2[3:0] -pg 1 -lvl 4 -x 1000 -y 380
+load inst A1 addsub work:addsub:NOFILE -autohide -attr @cell(#000000) addsub -pinBusAttr A1 @name A1[3:0] -pinBusAttr A2 @name A2[3:0] -pinBusAttr C @name C[3:0] -pinBusAttr S @name S[3:0] -pg 1 -lvl 2 -x 470 -y 50
+load inst A2 addsub work:abstract:NOFILE -autohide -attr @cell(#000000) addsub -pinBusAttr A1 @name A1[3:0] -pinBusAttr A2 @name A2[3:0] -pinBusAttr C @name C[3:0] -pinBusAttr S @name S[3:0] -pg 1 -lvl 2 -x 470 -y 210
+load inst D1 divider work:divider:NOFILE -autohide -attr @cell(#000000) divider -pinBusAttr A @name A[3:0] -pinBusAttr B @name B[3:0] -pinBusAttr Q @name Q[3:0] -pinBusAttr R @name R[3:0] -pg 1 -lvl 2 -x 470 -y 460
+load inst DM1 demux_shift_vector work:demux_shift_vector:NOFILE -autohide -attr @cell(#000000) demux_shift_vector -pinBusAttr input @name input[3:0] -pinBusAttr output0 @name output0[3:0] -pinBusAttr output1 @name output1[3:0] -pinBusAttr output2 @name output2[3:0] -pinBusAttr output3 @name output3[3:0] -pinBusAttr sel @name sel[1:0] -pg 1 -lvl 1 -x 110 -y 190
+load inst DM2 demux_shift_vector work:abstract:NOFILE -autohide -attr @cell(#000000) demux_shift_vector -pinBusAttr input @name input[3:0] -pinBusAttr output0 @name output0[3:0] -pinBusAttr output1 @name output1[3:0] -pinBusAttr output2 @name output2[3:0] -pinBusAttr output3 @name output3[3:0] -pinBusAttr sel @name sel[1:0] -pg 1 -lvl 1 -x 110 -y 350
+load inst M1 Multiplier_VHDL work:Multiplier_VHDL:NOFILE -autohide -attr @cell(#000000) Multiplier_VHDL -pinBusAttr Nibble1 @name Nibble1[3:0] -pinBusAttr Nibble2 @name Nibble2[3:0] -pinBusAttr Result1 @name Result1[3:0] -pinBusAttr Result2 @name Result2[3:0] -pg 1 -lvl 2 -x 470 -y 350
+load inst MX1 mux_shift_vector work:mux_shift_vector:NOFILE -autohide -attr @cell(#000000) mux_shift_vector -pinBusAttr input0 @name input0[3:0] -pinBusAttr input1 @name input1[3:0] -pinBusAttr input2 @name input2[3:0] -pinBusAttr input3 @name input3[3:0] -pinBusAttr output @name output[3:0] -pinBusAttr sel @name sel[1:0] -pg 1 -lvl 3 -x 840 -y 160
+load inst MX2 mux_shift_vector work:abstract:NOFILE -autohide -attr @cell(#000000) mux_shift_vector -pinBusAttr input0 @name input0[3:0] -pinBusAttr input1 @name input1[3:0] -pinBusAttr input2 @name input2[3:0] -pinBusAttr input3 @name input3[3:0] -pinBusAttr output @name output[3:0] -pinBusAttr sel @name sel[1:0] -pg 1 -lvl 3 -x 840 -y 330
+load net <const0> -ground -pin A1 K
+load net <const1> -power -pin A2 K
+load net C[0] -attr @rip C[0] -pin A1 C[0] -pin MX2 input0[0]
+load net C[1] -attr @rip C[1] -pin A1 C[1] -pin MX2 input0[1]
+load net C[2] -attr @rip C[2] -pin A1 C[2] -pin MX2 input0[2]
+load net C[3] -attr @rip C[3] -pin A1 C[3] -pin MX2 input0[3]
+load net Q1[0] -attr @rip S[0] -pin A2 S[0] -pin MX1 input1[0]
+load net Q1[1] -attr @rip S[1] -pin A2 S[1] -pin MX1 input1[1]
+load net Q1[2] -attr @rip S[2] -pin A2 S[2] -pin MX1 input1[2]
+load net Q1[3] -attr @rip S[3] -pin A2 S[3] -pin MX1 input1[3]
+load net Q5[0] -attr @rip C[0] -pin A2 C[0] -pin MX2 input1[0]
+load net Q5[1] -attr @rip C[1] -pin A2 C[1] -pin MX2 input1[1]
+load net Q5[2] -attr @rip C[2] -pin A2 C[2] -pin MX2 input1[2]
+load net Q5[3] -attr @rip C[3] -pin A2 C[3] -pin MX2 input1[3]
+load net Q[0] -attr @rip Q[0] -pin D1 Q[0] -pin MX1 input3[0]
+load net Q[1] -attr @rip Q[1] -pin D1 Q[1] -pin MX1 input3[1]
+load net Q[2] -attr @rip Q[2] -pin D1 Q[2] -pin MX1 input3[2]
+load net Q[3] -attr @rip Q[3] -pin D1 Q[3] -pin MX1 input3[3]
+load net R[0] -attr @rip R[0] -pin D1 R[0] -pin MX2 input3[0]
+load net R[1] -attr @rip R[1] -pin D1 R[1] -pin MX2 input3[1]
+load net R[2] -attr @rip R[2] -pin D1 R[2] -pin MX2 input3[2]
+load net R[3] -attr @rip R[3] -pin D1 R[3] -pin MX2 input3[3]
+load net Result1[0] -attr @rip Result1[0] -pin M1 Result1[0] -pin MX1 input2[0]
+load net Result1[1] -attr @rip Result1[1] -pin M1 Result1[1] -pin MX1 input2[1]
+load net Result1[2] -attr @rip Result1[2] -pin M1 Result1[2] -pin MX1 input2[2]
+load net Result1[3] -attr @rip Result1[3] -pin M1 Result1[3] -pin MX1 input2[3]
+load net Result2[0] -attr @rip Result2[0] -pin M1 Result2[0] -pin MX2 input2[0]
+load net Result2[1] -attr @rip Result2[1] -pin M1 Result2[1] -pin MX2 input2[1]
+load net Result2[2] -attr @rip Result2[2] -pin M1 Result2[2] -pin MX2 input2[2]
+load net Result2[3] -attr @rip Result2[3] -pin M1 Result2[3] -pin MX2 input2[3]
+load net S[0] -attr @rip S[0] -pin A1 S[0] -pin MX1 input0[0]
+load net S[1] -attr @rip S[1] -pin A1 S[1] -pin MX1 input0[1]
+load net S[2] -attr @rip S[2] -pin A1 S[2] -pin MX1 input0[2]
+load net S[3] -attr @rip S[3] -pin A1 S[3] -pin MX1 input0[3]
+load net T1[0] -attr @rip output1[0] -pin A2 A1[0] -pin DM1 output1[0]
+load net T1[1] -attr @rip output1[1] -pin A2 A1[1] -pin DM1 output1[1]
+load net T1[2] -attr @rip output1[2] -pin A2 A1[2] -pin DM1 output1[2]
+load net T1[3] -attr @rip output1[3] -pin A2 A1[3] -pin DM1 output1[3]
+load net T2[0] -attr @rip output2[0] -pin DM1 output2[0] -pin M1 Nibble1[0]
+load net T2[1] -attr @rip output2[1] -pin DM1 output2[1] -pin M1 Nibble1[1]
+load net T2[2] -attr @rip output2[2] -pin DM1 output2[2] -pin M1 Nibble1[2]
+load net T2[3] -attr @rip output2[3] -pin DM1 output2[3] -pin M1 Nibble1[3]
+load net T4[0] -attr @rip output0[0] -pin A1 A2[0] -pin DM2 output0[0]
+load net T4[1] -attr @rip output0[1] -pin A1 A2[1] -pin DM2 output0[1]
+load net T4[2] -attr @rip output0[2] -pin A1 A2[2] -pin DM2 output0[2]
+load net T4[3] -attr @rip output0[3] -pin A1 A2[3] -pin DM2 output0[3]
+load net T5[0] -attr @rip output1[0] -pin A2 A2[0] -pin DM2 output1[0]
+load net T5[1] -attr @rip output1[1] -pin A2 A2[1] -pin DM2 output1[1]
+load net T5[2] -attr @rip output1[2] -pin A2 A2[2] -pin DM2 output1[2]
+load net T5[3] -attr @rip output1[3] -pin A2 A2[3] -pin DM2 output1[3]
+load net T6[0] -attr @rip output2[0] -pin DM2 output2[0] -pin M1 Nibble2[0]
+load net T6[1] -attr @rip output2[1] -pin DM2 output2[1] -pin M1 Nibble2[1]
+load net T6[2] -attr @rip output2[2] -pin DM2 output2[2] -pin M1 Nibble2[2]
+load net T6[3] -attr @rip output2[3] -pin DM2 output2[3] -pin M1 Nibble2[3]
+load net T7[0] -attr @rip output3[0] -pin D1 B[0] -pin DM2 output3[0]
+load net T7[1] -attr @rip output3[1] -pin D1 B[1] -pin DM2 output3[1]
+load net T7[2] -attr @rip output3[2] -pin D1 B[2] -pin DM2 output3[2]
+load net T7[3] -attr @rip output3[3] -pin D1 B[3] -pin DM2 output3[3]
+load net choicevec[0] -attr @rip choicevec[0] -pin DM1 sel[0] -pin DM2 sel[0] -pin MX1 sel[0] -pin MX2 sel[0] -port choicevec[0]
+load net choicevec[1] -attr @rip choicevec[1] -pin DM1 sel[1] -pin DM2 sel[1] -pin MX1 sel[1] -pin MX2 sel[1] -port choicevec[1]
+load net input1[0] -attr @rip input1[0] -pin DM1 input[0] -port input1[0]
+load net input1[1] -attr @rip input1[1] -pin DM1 input[1] -port input1[1]
+load net input1[2] -attr @rip input1[2] -pin DM1 input[2] -port input1[2]
+load net input1[3] -attr @rip input1[3] -pin DM1 input[3] -port input1[3]
+load net input2[0] -attr @rip input2[0] -pin DM2 input[0] -port input2[0]
+load net input2[1] -attr @rip input2[1] -pin DM2 input[1] -port input2[1]
+load net input2[2] -attr @rip input2[2] -pin DM2 input[2] -port input2[2]
+load net input2[3] -attr @rip input2[3] -pin DM2 input[3] -port input2[3]
+load net output0[0] -attr @rip output0[0] -pin A1 A1[0] -pin DM1 output0[0]
+load net output0[1] -attr @rip output0[1] -pin A1 A1[1] -pin DM1 output0[1]
+load net output0[2] -attr @rip output0[2] -pin A1 A1[2] -pin DM1 output0[2]
+load net output0[3] -attr @rip output0[3] -pin A1 A1[3] -pin DM1 output0[3]
+load net output1[0] -attr @rip output[0] -pin MX1 output[0] -port output1[0]
+load net output1[1] -attr @rip output[1] -pin MX1 output[1] -port output1[1]
+load net output1[2] -attr @rip output[2] -pin MX1 output[2] -port output1[2]
+load net output1[3] -attr @rip output[3] -pin MX1 output[3] -port output1[3]
+load net output2[0] -attr @rip output[0] -pin MX2 output[0] -port output2[0]
+load net output2[1] -attr @rip output[1] -pin MX2 output[1] -port output2[1]
+load net output2[2] -attr @rip output[2] -pin MX2 output[2] -port output2[2]
+load net output2[3] -attr @rip output[3] -pin MX2 output[3] -port output2[3]
+load net output3[0] -attr @rip output3[0] -pin D1 A[0] -pin DM1 output3[0]
+load net output3[1] -attr @rip output3[1] -pin D1 A[1] -pin DM1 output3[1]
+load net output3[2] -attr @rip output3[2] -pin D1 A[2] -pin DM1 output3[2]
+load net output3[3] -attr @rip output3[3] -pin D1 A[3] -pin DM1 output3[3]
+load netBundle @choicevec 2 choicevec[1] choicevec[0] -autobundled
+netbloc @choicevec 1 0 3 20 300 NJ 300 730
+load netBundle @input1 4 input1[3] input1[2] input1[1] input1[0] -autobundled
+netbloc @input1 1 0 1 NJ 220
+load netBundle @input2 4 input2[3] input2[2] input2[1] input2[0] -autobundled
+netbloc @input2 1 0 1 NJ 380
+load netBundle @output1 4 output1[3] output1[2] output1[1] output1[0] -autobundled
+netbloc @output1 1 3 1 NJ 210
+load netBundle @output2 4 output2[3] output2[2] output2[1] output2[0] -autobundled
+netbloc @output2 1 3 1 NJ 380
+load netBundle @C 4 C[3] C[2] C[1] C[0] -autobundled
+netbloc @C 1 2 1 710 60n
+load netBundle @S 4 S[3] S[2] S[1] S[0] -autobundled
+netbloc @S 1 2 1 630 80n
+load netBundle @Q5 4 Q5[3] Q5[2] Q5[1] Q5[0] -autobundled
+netbloc @Q5 1 2 1 650 220n
+load netBundle @Q1 4 Q1[3] Q1[2] Q1[1] Q1[0] -autobundled
+netbloc @Q1 1 2 1 630 190n
+load netBundle @Q 4 Q[3] Q[2] Q[1] Q[0] -autobundled
+netbloc @Q 1 2 1 690 230n
+load netBundle @R 4 R[3] R[2] R[1] R[0] -autobundled
+netbloc @R 1 2 1 750 400n
+load netBundle @output0 4 output0[3] output0[2] output0[1] output0[0] -autobundled
+netbloc @output0 1 1 1 270 60n
+load netBundle @T1 4 T1[3] T1[2] T1[1] T1[0] -autobundled
+netbloc @T1 1 1 1 N 220
+load netBundle @T2 4 T2[3] T2[2] T2[1] T2[0] -autobundled
+netbloc @T2 1 1 1 330 240n
+load netBundle @output3 4 output3[3] output3[2] output3[1] output3[0] -autobundled
+netbloc @output3 1 1 1 310 260n
+load netBundle @T4 4 T4[3] T4[2] T4[1] T4[0] -autobundled
+netbloc @T4 1 1 1 290 80n
+load netBundle @T5 4 T5[3] T5[2] T5[1] T5[0] -autobundled
+netbloc @T5 1 1 1 350 240n
+load netBundle @T6 4 T6[3] T6[2] T6[1] T6[0] -autobundled
+netbloc @T6 1 1 1 370 380n
+load netBundle @T7 4 T7[3] T7[2] T7[1] T7[0] -autobundled
+netbloc @T7 1 1 1 270 420n
+load netBundle @Result1 4 Result1[3] Result1[2] Result1[1] Result1[0] -autobundled
+netbloc @Result1 1 2 1 670 210n
+load netBundle @Result2 4 Result2[3] Result2[2] Result2[1] Result2[0] -autobundled
+netbloc @Result2 1 2 1 N 380
+levelinfo -pg 1 0 110 470 840 1000
+pagesize -pg 1 -db -bbox -sgen -140 0 1130 530
+show
+fullfit
+#
+# initialize ictrl to current module calci work:calci:NOFILE
+ictrl init topinfo |
