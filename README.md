@@ -7,6 +7,9 @@ Design and implementation of a 4-bit binary calculator using VHDL
 
 This project focuses on the design and implementation of a 4-bit binary calculator using VHDL (Very High-Speed Integrated Circuit Hardware Description Language) on Xilinx Vivado Software. The calculator performs basic arithmetic operations, including addition, subtraction, multiplication, and division on 4-bit binary numbers.
 
+## Project Report
+Google Drive link: https://drive.google.com/file/d/1HKk4kVSC94tNOqUKIohjrSrMwpdzghdR/view?usp=sharing
+
 ## Project Components
 
 ### Xilinx Vivado Software
