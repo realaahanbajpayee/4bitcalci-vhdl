@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_3calci.srcs/sources_1/new/calci.vhd" \
+"../../../../project_3calci.srcs/sim_1/new/testbench.vhd" \
+
+# Do not sort compile order
+nosort
